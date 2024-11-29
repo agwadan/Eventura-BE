@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "search_queries",
+  "info": {
+    "singularName": "search-query",
+    "pluralName": "search-queries",
+    "displayName": "search-queries",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "query": {
+      "type": "string"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}
